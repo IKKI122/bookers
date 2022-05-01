@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<head>
+    <title>WebCampBackendNew</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app/assets/stylesheets/app.css">
+</head>
+<body>
 <p>
     <strong>Title:</strong>
     <%= @book.title %>
@@ -8,6 +15,11 @@
     <%= @book.body %>
 </p>
 
-<%= link_to "Edit",edit_book_path(@book.id) %>
+<a>
+    <%= link_to "Edit",edit_book_path(@book.id) %>
+</a>
 |
-<%= link_to "Back",books_path(@book.id) %>
+<a>
+    <%= link_to "Back",books_path(@book.id) %>
+</a>
+</body>
