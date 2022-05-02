@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="app/assets/stylesheets/application.css">
 </head>
 <body>
+<p id="notice"><%= notice %></p>
 <h1>Books</h1>
 
     <table>
@@ -62,14 +63,13 @@
         </div>
     </div>
     <% else %>
-    
     <div>
         <div>
             <label for="book_title">Title</label>
             <div><%= f.text_field :title %></div>
         </div>
     
-        <div class="field">
+        <div>
             <label for="book_body">Body</label>
             <div><%= f.text_area :body %></div>
         </div>
