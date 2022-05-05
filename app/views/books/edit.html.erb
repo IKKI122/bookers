@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
     <title>WebCampBackendNew</title>
     <meta charset="UTF-8">
@@ -56,12 +54,7 @@
     </div>
 <% end %>
 
-<a>
     <%= link_to "Show",book_path(@book.id) %>
-</a> 
 |
-<a>
-    <%= link_to "Back",books_path(@book.id) %>
-</a>
+    <%= link_to "Back",books_path %>
 </body>
-</html>

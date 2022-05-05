@@ -1,26 +1,15 @@
-<!DOCTYPE html>
-<head>
-    <title>WebCampBackendNew</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="app/assets/stylesheets/app.css">
-</head>
-<body>
-    <p id="notice"><%= notice %></p>
-    <p>
-        <strong>Title:</strong>
-        <%= @book.title %>
-    </p>
-    
-    <p>
-        <strong>Body:</strong>
-        <%= @book.body %>
-    </p>
-    
-    <a>
+<p id="notice"><%= notice %></p>
+
+<p>
+    <strong>Title: </strong>
+    <%= @book.title %>
+</p>
+
+<p>
+    <strong>Body: </strong>
+    <%= @book.body %>
+</p>
+
         <%= link_to "Edit",edit_book_path(@book.id) %>
-    </a>
     |
-    <a>
-        <%= link_to "Back",books_path(@book.id) %>
-    </a>
-</body>
+        <%= link_to "Back",books_path %>
